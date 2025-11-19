@@ -32,7 +32,7 @@ std::vector<Contact> Contact_manager::readContact() {
    std::vector<Contact> data;
    std::wstring line;
 
-   std::wcout << L"¬ведите записи (пуста€ строка Ч конец):\n";
+   std::wcout << L"Enter records (blank line - end):\n";
 
    while (true) {
       std::getline(std::wcin, line);
@@ -96,3 +96,4 @@ void Contact_manager::printContact(const std::vector<Contact>& data, SortMode mo
          std::wcout << r.firstName << L" " << r.lastName << L": " << r.phoneStr << L"\n";
    }
 }
+
