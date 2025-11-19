@@ -13,10 +13,10 @@ int main() {
 #endif
 
    while (true) {
-      std::wcout << L"\n1 Ц сортировка по именам\n"
-         L"2 Ц сортировка по фамили€м\n"
-         L"3 Ц сортировка по телефонам\n"
-         L"0 Ц выход\n";
+      std::wcout << L"\n1 вАУ sort by name\n"
+         L"2 вАУ sort by last name\n"
+         L"3 вАУ sorting by phone numbers\n"
+         L"0 - exit\n";
 
       int mode;
       if (!(std::wcin >> mode)) break;
@@ -26,7 +26,7 @@ int main() {
 
       if (mode == 0) break;
       if (mode < 1 || mode > 3) {
-         std::wcout << L"ќшибка: нет такого режима.\n";
+         std::wcout << L"Error: No such mode.\n";
          continue;
       }
 
@@ -37,3 +37,4 @@ int main() {
 
    return 0;
 }
+
